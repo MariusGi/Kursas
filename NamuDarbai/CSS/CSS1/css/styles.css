@@ -1,0 +1,9 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2 {
+    color: rgb(238, 62, 128);
+}
+p:nth-of-type(2) {
+    color: rgb(155, 140, 122);
+}
