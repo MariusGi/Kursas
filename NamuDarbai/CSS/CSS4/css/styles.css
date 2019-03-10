@@ -1,0 +1,40 @@
+body {
+    border: 4px double black;   
+}
+img {
+    display: block;
+    margin: 4% auto;
+}
+ul {
+    text-align: center;
+    word-spacing: 2em;
+    font-size: 0.9em;
+    list-style: none;
+    padding: 0;
+}
+p {
+    text-align: center;
+    padding-bottom: 5%;
+}
+ul li {
+    display: inline;
+}
+#pageDiv {
+    width: 48%;
+    margin: auto;
+}
+#mainLi {
+    color: RGB(229, 152, 153);
+}
+#topHr {
+    background-color: black;
+    border: 0 none;
+    height: 2px;
+}
+#bottomHr {
+    background-color: black;
+    border: 0 none;
+    height: 1px;  
+}
+
+
