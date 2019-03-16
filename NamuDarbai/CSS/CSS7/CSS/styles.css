@@ -1,0 +1,49 @@
+body {
+    background: #eff1f4;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+.calendarFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10.1%;
+}
+.calendarFlexContainer > div {
+    flex-basis: 12.8%;
+    padding: 0.5%;
+    margin: 0.2%;
+    height: 8em;
+    background: white;
+}
+.calendarFlexContainer > div:hover {
+    background: #eeeeee;
+}
+.calendarFlexContainer .calendarWeekend {
+    background: #e2d836;
+}
+.calendarFlexContainer .calendarWeekend:hover {
+    background: #fff335;
+}
+
+.calendarEvents {
+    font-size: 60%;
+    padding: 1%;
+    margin: 15% 5% 5% 5%;
+}
+.eventSportActivities {
+    background: #7dff32;
+}
+.eventCultureActivities {
+    background: #ffbaf5;
+}
+.eventSportActivities:hover > #eventRunActivitityDescription, .eventCultureActivities:hover > #eventConcertDescription, .eventCultureActivities:hover > #eventSummerFestDescription {
+    display: contents;
+    display: block;
+}
+
+#eventRunActivitityDescription, #eventConcertDescription, #eventSummerFestDescription {
+    display: none;
+}
