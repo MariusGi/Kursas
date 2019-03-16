@@ -1,0 +1,17 @@
+.container { /*class in index.html*/
+    width: 70%;
+    padding: 5em 0 0 0;
+}
+#oldPrice { /*id in app.js*/
+    color: red;
+    text-decoration: line-through;
+}
+#newPrice { /*id in app.js*/
+    color: blue;
+    font-size: 2em;
+}
+#contentBorder { /*id in index.html*/
+    border: 1px dashed #ddd;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+    padding: 1em;
+}
