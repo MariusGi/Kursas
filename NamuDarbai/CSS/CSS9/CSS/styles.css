@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: RGB(248, 248, 238);
+}
+button {
+    background: RGB(158, 222, 63);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    width: 120px;
+    height: 40px;
+}
+button:hover {
+    background: RGB(169, 244, 56);
+}
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.singleItemContainer {
+    flex-basis: 30%;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+}
+.singleItemContainer:hover {
+    box-shadow: 2px 2px #d3e4ff;
+}
+.priceAfterDiscount {
+    font-size: 2em;
+}
+.priceAfterDiscount > p {
+    margin: 0;
+}
+.priceBeforeDiscount {
+    text-decoration: line-through;
+}
+.priceBeforeDiscount > p {
+    margin: 0;
+}
+.additionalPrice {
+    color: RGB(142, 137, 118);
+    font-size: 0.7em;
+}
+.highlightedText {
+    color: RGB(99, 122, 200);
+    font-size: 1.2em;
+}
+@media(max-width: 700px) {
+    .contentContainer { flex-wrap: wrap; }
+    .singleItemContainer { flex-basis: 100%; }
+}
