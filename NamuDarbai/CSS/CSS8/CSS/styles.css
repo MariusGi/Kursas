@@ -1,0 +1,67 @@
+body{
+    margin: 0 0.5% 0 0.5%;
+}
+h1, h2 {
+    margin-top: 0;
+}
+
+/*Registration form styles*/
+.regisrationFormContainer {
+    background: RGB(255, 246, 163);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2%;
+}
+.regisrationFormContainer > h2,p,div.inputFieldContainer {
+    flex-basis: 100%;
+    padding-left: 0.5%;
+}
+.inputFieldsContainer {
+    width: 550px;
+}
+.inputFieldsContainer div button {
+    width: 98.7%;
+    height: 30px;
+    margin-left: 1%;
+}
+.inputFieldContainer {
+    display: flex;  
+    justify-content: space-between;
+    height: 30px;
+    margin: 0.5%;  
+}
+.inputFieldContainer input {
+    width: 55%;
+    box-shadow: 1px 1px #888888;
+}
+
+/*Registered persons styles*/
+.registeredUsersContentsContainer {
+    background: RGB(194, 255, 189);
+    padding: 2%;
+    margin: 0.5% 0 0.5% 0;
+}
+.registeredUsersTableContainer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.tableBodyCol > div {
+    border: 1px solid black;
+    padding: 20px 0 20px 10px;
+}
+.tableHeader {
+    background: RGB(199, 184, 255);
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+#tableCol1 {
+    flex: 6;
+}
+#tableCol2 {
+    flex: 1;
+}
+#tableCol3 {
+    flex: 2;
+}
