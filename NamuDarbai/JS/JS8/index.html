@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS8 ND</title>
+</head>
+
+<body>
+    <script type="application/javascript">
+        const ourArray = ['Jonas', 'Petras', 'Martynas', 'Ona', 'Urtė', 'Ema'];
+        const nameToRemove = 'Ona';
+        
+        printNamesFromArray(ourArray, nameToRemove);
+        printNamesFromArray2(ourArray, nameToRemove);
+        printNamesFromArray3(ourArray, nameToRemove);
+        
+//1 BŪDAS        
+        function printNamesFromArray(arr, arrElToRemove) {
+            const arrInd = arr.indexOf(arrElToRemove);
+            if(arrInd > -1)
+            {
+                arr.splice(arrInd, 2);
+                console.log(arr);    
+            } else
+            {
+                console.log('There is no such element in array! Please try again.');        
+            }
+        }
+//2 BŪDAS
+        function printNamesFromArray2(arr, arrElToRemove) {
+            let ourNameString = '';
+            
+            arr.forEach(function(el) 
+            {
+                if(el !==  arrElToRemove)
+                {
+                    ourNameString += el + ' '
+                }
+            });
+            console.log(ourNameString.trim());
+        }
+//3 BŪDAS
+        function printNamesFromArray3(arr, arrElToRemove) {
+            for(let i=0; i < arr.length; i++)
+            {
+                if(i !== arrElToRemove)
+                {
+                    console.log(arr[i]);        
+                }
+            }
+        }
+    </script>
+</body>
+    
+</html>
