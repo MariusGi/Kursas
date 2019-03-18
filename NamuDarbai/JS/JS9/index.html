@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS9 ND</title>
+</head>
+
+<body>
+    <script type="application/javascript">
+        let viesbuciai = [
+            {
+                "name": "Radisson",
+                "Address": "Konstitucijos pr. 29",
+                "Rooms":[
+                    {"Number":210, "GuestCount":2, "Price":100},
+                    {"Number":211, "GuestCount":2, "Price":110},
+                    {"Number":212, "GuestCount":2, "Price":109}
+                ]
+            },
+            {
+                "name": "Vilnius Inn",
+                "Address": "Šiaulių g. 3",
+                "Rooms":[
+                    {"Number":11, "GuestCount":2, "Price":100},
+                    {"Number":15, "GuestCount":1, "Price":58},
+                    {"Number":22, "GuestCount":2, "Price":80},
+                    {"Number":23, "GuestCount":2, "Price":99}
+                ]
+            }
+        ];
+        
+        const h1HTML = `<h1>Viešbučiai (su laisvais kambariais)</h1>`;
+        const firstHotelNameHTML = `<h2>${viesbuciai[0].name}</h2>`;
+        const secondHotelNameHTML = `<h2>${viesbuciai[1].name}</h2>`;
+        const firstHotelAddressHTML = `<h3>${viesbuciai[0].Address}</h3>`;
+        const secondHotelAddressHTML = `<h3>${viesbuciai[1].Address}</h3>`;
+        
+        const firstHotelTableHTML = 
+        `<table border='1'>
+            <thead>
+                <tr>
+                    <th>Kambario numeris</th>
+                    <th>Žmonių skaičius</th>
+                    <th>Kaina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${viesbuciai[0].Rooms[0].Number}</td>
+                    <td>${viesbuciai[0].Rooms[0].GuestCount}</td>
+                    <td>${viesbuciai[0].Rooms[0].Price}</td>
+                </tr>                
+                <tr>
+                    <td>${viesbuciai[0].Rooms[1].Number}</td>
+                    <td>${viesbuciai[0].Rooms[1].GuestCount}</td>
+                    <td>${viesbuciai[0].Rooms[1].Price}</td>
+                </tr>               
+                <tr>
+                    <td>${viesbuciai[0].Rooms[2].Number}</td>
+                    <td>${viesbuciai[0].Rooms[2].GuestCount}</td>
+                    <td>${viesbuciai[0].Rooms[2].Price}</td>
+                </tr>
+            <tbody>
+        </table>`
+        
+        const secondHotelTableHTML = 
+        `<table border='1'>
+            <thead>
+                <tr>
+                    <th>Kambario numeris</th>
+                    <th>Žmonių skaičius</th>
+                    <th>Kaina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${viesbuciai[1].Rooms[0].Number}</td>
+                    <td>${viesbuciai[1].Rooms[0].GuestCount}</td>
+                    <td>${viesbuciai[1].Rooms[0].Price}</td>
+                </tr>                
+                <tr>
+                    <td>${viesbuciai[1].Rooms[1].Number}</td>
+                    <td>${viesbuciai[1].Rooms[1].GuestCount}</td>
+                    <td>${viesbuciai[1].Rooms[1].Price}</td>
+                </tr>               
+                <tr>
+                    <td>${viesbuciai[1].Rooms[2].Number}</td>
+                    <td>${viesbuciai[1].Rooms[2].GuestCount}</td>
+                    <td>${viesbuciai[1].Rooms[2].Price}</td>
+                </tr>           
+                <tr>
+                    <td>${viesbuciai[1].Rooms[3].Number}</td>
+                    <td>${viesbuciai[1].Rooms[3].GuestCount}</td>
+                    <td>${viesbuciai[1].Rooms[3].Price}</td>
+                </tr>
+            <tbody>
+        </table>`
+        
+        document.write(h1HTML);
+        document.write(firstHotelNameHTML);
+        document.write(firstHotelAddressHTML);
+        document.write(firstHotelTableHTML);
+        document.write(secondHotelNameHTML);
+        document.write(secondHotelAddressHTML);
+        document.write(secondHotelTableHTML);
+    </script>
+</body>
+    
+</html>
