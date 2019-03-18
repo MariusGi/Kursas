@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS7 ND</title>
+</head>
+
+<body>
+    <script type="application/javascript">
+        const printNumbersFrom = 0;
+        const printNumbersTo = 100;
+        
+        printOddNumbers(printNumbersFrom, printNumbersTo);
+        
+        function printOddNumbers(num1, num2) {
+//PIRMAS BŪDAS
+            for(let i = num1; i <= num2; i++)
+            {
+                if (i % 2 === 0) 
+                {
+                    console.log(i);  
+                }     
+            }         
+            
+//ANTRAS BŪDAS            
+//            for(let i = num1; i <= num2; i+=2)
+//            {
+//                console.log(i);        
+//            }         
+        }
+    </script>
+</body>
+    
+</html>
