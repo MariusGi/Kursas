@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS4 ND</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <button>Čia</button>
+    
+    <script>
+        let number1 = 1;
+        let number2 = 2;
+        
+        $('button').on('click', function() {
+            console.log(divideTwoNumbers(number1, number2));
+            alert(divideTwoNumbers(number1, number2));
+        });
+        
+        function divideTwoNumbers (num1, num2){
+            let divisionResult;
+            return divisionResult = num1 / num2 ;
+        }  
+    </script>
+    
+</body>
+    
+</html>
