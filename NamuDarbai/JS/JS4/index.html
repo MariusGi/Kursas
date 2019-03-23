@@ -4,25 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS4 ND</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>JS4 ND | V2</title>
 </head>
 
 <body>
-    <button>Čia</button>
+    <div>
+        <button onclick="divideTwoNumbers(1,2);">Čia</button>
+    </div>
     
     <script type="application/javascript">
-        let number1 = 1;
-        let number2 = 2;
-        
-        $('button').on('click', function() {
-            console.log(divideTwoNumbers(number1, number2));
-            alert(divideTwoNumbers(number1, number2));
-        })
-        
         function divideTwoNumbers (num1, num2){
             let divisionResult;
-            return divisionResult = num1 / num2 ;
+            let newPara = document.createElement('p');
+            let node;
+            let mainDiv;
+            
+            divisionResult = num1 / num2 ;
+            
+            node = document.createTextNode(divisionResult);
+            newPara.appendChild(node);
+            mainDiv = document.getElementsByTagName('div')[0];
+            
+            console.log(divisionResult);
+            alert(divisionResult);
+            mainDiv.appendChild(newPara);
         }  
     </script>
     
