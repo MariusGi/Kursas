@@ -1,0 +1,21 @@
+#inputContainer {
+    max-width: 100%;
+    padding: 0 0 2% 0;
+}
+#submitContainer {
+    margin: 2.5% 0 0 0;
+}
+.inputName, .inputValue{
+    width: 5%;
+    float: left;
+}
+::placeholder {
+    opacity: 0.5;
+}
+p{
+    margin-bottom: 0;
+}
+textarea {
+    width: 60%;
+    height: 8em;
+}
