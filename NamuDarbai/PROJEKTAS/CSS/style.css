@@ -1,0 +1,139 @@
+/*AmCharts styles*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#chartdiv {
+	width	: 100%;
+	height	: 500px;
+}
+#info {
+    opacity: 0.9;
+    background: #ccc;
+    padding: 10px;
+}
+.amcharts-chart-div > a {
+    display: none !important;
+}
+
+/*My styles*/
+
+/*Body*/
+
+.indexBackground {
+    background-image: url(../images/ocean.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contactBackground {
+    background-image: url(../images/email-3249062_960_720.png);
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+
+/*Forms*/
+
+.indexNav {
+    background-image: url(../images/ocean.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contactNav {
+    background-image: url(../images/email-3249062_960_720.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+input, select {
+    margin-top: 15px;
+    padding: 0;
+}
+textarea {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.navbarImg {
+    width: 50px;
+    height: 50px;
+}
+.nav-link {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.contactMeAnchor:hover, .pageLogoAnchor:hover, .btn-outline-light:hover {
+    color: RGB(255, 204, 0);
+}
+.welcomeMessage {
+    color: white;
+    font-size: 15px
+}
+.surveyFormWrapper, .signUpFormWrapper, .logInFormWrapper {
+    display: none;
+    right: 3%;
+    z-index: 1;
+}
+.surveyResultsWrapper {
+    display: none;
+    right: 3%;
+    z-index: 1;
+    color: white;
+    font-size: 15px;
+}
+.surveyFormWrapper form, .signUpFormWrapper form, .logInFormWrapper form, .surveyResultsWrapper > div {
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.surveyFormWrapper div, .signUpFormWrapper div, .logInFormWrapper div, .surveyResultsWrapper div {
+    width: 200px;
+    margin: 15px;
+}
+.lblQuestions {
+    margin-bottom: 15px;
+}
+
+/*Modal*/
+
+.modal {
+    height: 110px;
+}
+.modal > p {
+    margin-bottom: 5px;
+}
+.countryFlag {
+    height: 15px;
+    width: 15px;
+}
+
+/*FadeIn, FadeOut messages*/
+
+.fadeInMessage {
+    display: none;
+    background: black;
+    width:300px; 
+    height:30px; 
+    position:absolute;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    top: 50%;
+    left: 40%;
+    z-index: 1;
+}

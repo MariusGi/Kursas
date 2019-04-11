@@ -1,0 +1,63 @@
+<!--All forms by default are hidden (display=none). In case of navbar button press, form display changes to flex. Code is written in JS/forms.js-->
+</div>
+    </nav>
+        <div class="signUpFormWrapper">
+            <form action="includes/signup.inc.php" method="post">
+                <div class="form-group">
+                    <input type="text" name="signUpFirstname" class="form-control" id="signUpFirstname" aria-describedby="signUpFirstname" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="signUpLastname" class="form-control" id="signUpLastname" aria-describedby="signUpLastname" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="signUpEmail" class="form-control" id="signUpEmail" aria-describedby="signUpEmail" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="signUpUsername" class="form-control" id="signUpUsername" aria-describedby="signUpUsername" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="signUpPassword" class="form-control" id="signUpPassword" placeholder="Password" required>
+                </div>  
+                <div>
+                    <button type="submit" name="signUpSubmit" class="btn btn-success">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div class="logInFormWrapper">
+            <form action="includes/login.inc.php" method="post">
+                <div class="form-group">
+                    <input type="text" name="logInUsername" class="form-control" id="logInUsername" aria-describedby="logInUsername" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="logInPassword" class="form-control" id="logInPassword" placeholder="Password" required>
+                </div>  
+                <div>
+                    <button type="submit" name="logInSubmit" class="btn btn-success">Log In</button>
+                </div>
+            </form>
+        </div>
+        <div class="surveyFormWrapper">
+            <form action="includes/survey.inc.php" method="post">
+                <div class="form-group">
+                    <label><i class="fas fa-venus-mars"></i></label>
+                    <input type="radio" name="surveyGender" value="male" checked> Male
+                    <input type="radio" name="surveyGender" value="female"> Female
+                    <input type="radio" name="surveyGender" value="other"> Other
+                </div>
+                <div>
+                    <label><i class="fas fa-star"></i></label>
+                    <select name="surveyRating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" name="surveySubmit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="surveyResultsWrapper">
+            <div>
