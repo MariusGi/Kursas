@@ -1,7 +1,7 @@
 <?php
    include_once 'includes/navbar-content.inc.php';
    include_once 'includes/pop-up-forms.inc.html';
-   include_once 'includes/survey-results.inc.php'; ?>
+   include_once 'includes/survey-results.inc.php';
 ?>
 
 <!--Getting results from the database and visualizing in the pop up.-->
